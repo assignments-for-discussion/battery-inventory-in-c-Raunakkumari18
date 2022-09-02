@@ -21,6 +21,16 @@ void testBucketingByNumberOfCycles() {
   assert(counts.mediumCount == 3);
   assert(counts.highCount == 1);
   printf("Done counting :)\n");
+  for(int i=0;i<nBatteries;i++){
+    if(cycles[i]<400){
+      counts[0]++;
+    }
+    else if(cycles[i]=>400&&cycles[i]<919){
+      counts[1]++;
+    }
+    else{
+    counts[2]++;}
+  }
 }
 
 int main() {
